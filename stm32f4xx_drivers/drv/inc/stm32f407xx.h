@@ -88,9 +88,38 @@ typedef struct
 /* RCC */
 typedef struct
 {
-	volatile CR_t		CR;
-	volatile PLLCFGR_t	PLLCFGR;
-	volatile CFGR_t		CFGR;
+	volatile CR_t			CR;
+	volatile PLLCFGR_t		PLLCFGR;
+	volatile CFGR_t			CFGR;
+	volatile CIR_t			CIR;
+	volatile AHB1RSTR_t		AHB1RSTR;
+	volatile AHB2RSTR_t		AHB2RSTR;
+	volatile AHB3RSTR_t		AHB3RSTR;
+	uint32_t 				reserved0;
+	volatile APB1RSTR_t		APB1RSTR;
+	volatile APB2RSTR_t		APB2RSTR;
+	uint32_t				reserved1[2];
+	volatile AHB1ENR_t		AHB1ENR;
+	volatile AHB2ENR_t		AHB2ENR;
+	volatile AHB3ENR_t		AHB3ENR;
+	uint32_t				reserved2;
+	volatile APB1ENR_t		APB1ENR;
+	volatile APB2ENR_t		APB2ENR;
+	uint32_t				reserved3[2];
+	volatile AHB1LPENR_t	AHB1LPENR;
+	volatile AHB2LPENR_t	AHB2LPENR;
+	volatile AHB3LPENR_t	AHB3LPENR;
+	uint32_t				reserved4;
+	volatile APB1LPENR_t	APB1LPENR;
+	volatile APB2LPENR_t	APB2LPENR;
+	uint32_t				reserved5[2];
+	volatile BDCR_t			BDCR;
+	volatile CSR_t			CSR;
+	uint32_t				reserved6[2];
+	volatile SSCGR_t		SSCGR;
+	volatile PLLI2SCFGR_t	PLLI2SCFGR;
+	volatile PLLSAICFGR_t	PLLSAICFGR;
+	volatile DCKCFGR_t		DCKCFGR;
 } RCC_PeriDef_t;
 
 
@@ -115,7 +144,7 @@ typedef struct
 #define RCC				( (RCC_PeriDef_t *)RCC_BASEADDR )
 
 /* Peripheral Clock Enable and Disable macros (RCC peripheral) */
-#define SPI1_CLK_EN		()
+#define SPI1_CLK_EN		( RCC-> )
 #define SPI1_CLK_DIS	()
 
 
