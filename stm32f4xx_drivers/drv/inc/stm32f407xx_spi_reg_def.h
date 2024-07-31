@@ -26,7 +26,7 @@ typedef union
 		uint32_t BIDI_MODE	: 1;
 		uint32_t reserved0	: 15;
 	} reg;
-	uint32 raw;
+	uint32_t raw;
 } CR1_t;
 
 typedef union
@@ -42,7 +42,7 @@ typedef union
 		uint32_t TXEIE		: 1;
 		uint32_t reserved1	: 24;
 	} reg;
-	uint32 raw;
+	uint32_t raw;
 } CR2_t;
 
 typedef union
@@ -59,7 +59,7 @@ typedef union
 		uint32_t FRE		: 1;
 		uint32_t reserved	: 23;
 	} reg;
-	uint32 raw;
+	uint32_t raw;
 } SR_t;
 
 typedef union
@@ -68,7 +68,7 @@ typedef union
 		uint32_t DR			: 16;
 		uint32_t reserved	: 16;
 	} reg;
-	uint32 raw;
+	uint32_t raw;
 } DR_t;
 
 typedef union
@@ -77,7 +77,7 @@ typedef union
 		uint32_t CRCPOLY	: 16;
 		uint32_t reserved	: 16;
 	} reg;
-	uint32 raw;
+	uint32_t raw;
 } CRCPR_t;
 
 typedef union
@@ -86,7 +86,7 @@ typedef union
 		uint32_t RXCRC		: 16;
 		uint32_t reserved	: 16;
 	} reg;
-	uint32 raw;
+	uint32_t raw;
 } RXCRCR_t;
 
 typedef union
@@ -95,7 +95,7 @@ typedef union
 		uint32_t TXCRC		: 16;
 		uint32_t reserved	: 16;
 	} reg;
-	uint32 raw;
+	uint32_t raw;
 } TXCRCR_t;
 
 typedef union
@@ -112,7 +112,7 @@ typedef union
 		uint32_t I2SMOD		: 1;
 		uint32_t reserved1	: 20;
 	} reg;
-	uint32 raw;
+	uint32_t raw;
 } I2SCFGR_t;
 
 typedef union
@@ -123,7 +123,7 @@ typedef union
 		uint32_t MCKOE		: 1;
 		uint32_t reserved	: 22;
 	} reg;
-	uint32 raw;
+	uint32_t raw;
 } I2SPR_t;
 
 #endif /* INC_STM32F407XX_SPI_REG_DEF_H_ */
